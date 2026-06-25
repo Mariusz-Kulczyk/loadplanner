@@ -15,17 +15,7 @@
 <link rel="stylesheet" href="site-overrides-v77.css?v=77">
   <link rel="stylesheet" href="tool-rail-v96.css?v=96">
 <link rel="stylesheet" href="site-mobile.css?v=107">
-<script>
-(function () {
-  if (location.protocol === 'file:') return;
-  var file = location.pathname.split('/').pop();
-  if (!file || !/\.html$/i.test(file)) return;
-  if (/^(index|404)\.html$/i.test(file)) return;
-  var clean = file.replace(/\.html$/i, '');
-  var prefix = location.pathname.slice(0, -file.length);
-  location.replace(prefix + clean + '/' + location.search + location.hash);
-})();
-</script>
+
 </head>
 <body>
 <div class="loadpilot-shell">
@@ -36,7 +26,7 @@
       <div class="planner-brand-actions"><a class="back-link" href="home.html#narzedzia" aria-label="Wróć do strony głównej"><i class="fa-solid fa-arrow-left"></i></a></div>
     </div>
 
-    <div class="planner-lang-switch" aria-label="Language selector"><span>Język / Language</span><a href="loadplanner.html" class="is-current" aria-current="page">PL</a><a href="loadplanner-en.html" class="">EN</a><a href="loadplanner-de.html" class="">DE</a></div>
+    <div class="planner-lang-switch" aria-label="Language selector"><span>Język / Language</span><a href="index.html" class="is-current" aria-current="page">PL</a><a href="loadplanner-en.html" class="">EN</a><a href="loadplanner-de.html" class="">DE</a></div>
 
     <div class="planner-mode-tabs planner-mode-tabs--icon-only" role="tablist" aria-label="Planner modes">
       <button class="planner-mode-tab is-active" type="button" role="tab" aria-selected="true" data-planner-mode="manual" aria-label="Ręczne ustawianie" title="Ręczne ustawianie"><i class="fa-solid fa-hand-pointer" aria-hidden="true"></i><span class="sr-only">Ręczne ustawianie</span></button>
